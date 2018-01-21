@@ -2,6 +2,8 @@
 
 Fovea is a Chrome Extension created to help the user break out the filter bubble. It allows to prioritize left or right-wing news websites by changing the order of the Google-search results.
 
+![image](img/screen.png)
+
 ## Slider
 The slider allows to reorder the Google search results accordingly to a database of names that can be edited.
 Hardcoded in the plugin there is a default database that will be used in case the custom one is left blank.
