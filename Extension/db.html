@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Set database</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+<style>
+    html {
+        background: #4E5B61;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+        color: #F7F9F9;
+    }
+
+    body {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    textarea {
+        background-color: #F7F9F9;
+        min-width: 200px;
+        min-height: 300px;
+        margin: 2%;
+        display: inline;
+        resize: none;
+    }
+
+    .raw {
+        max-width: 723px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .mini_wrapper {
+        display: inline-block;
+        text-align: center;
+    }
+    #instructions{
+      text-align: center;
+      margin-top: 50px;
+    }
+    #title{
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2em;
+      letter-spacing: 10px;
+    }
+    #save{
+      width: 200px;
+      height: 30px;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #save:hover{
+      cursor:pointer;
+      background-color: #BDC7C7;
+      border: 0px;
+    }
+    #button_wrapper{
+      width: 200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+</style>
+
+<body>
+  <div id="title">FOVEA</div>
+  <div id="instructions">Fill in the following text areas in order to create your own database.</br>Put the names of the news websites separated by a comma, exept for the very last one.</br>If left blank it will be used the default database.</br>Press the save button to make the changes permanent.</div>
+
+    <div class="raw">
+        <div id="Left" class="mini_wrapper">
+            <span>left</span>
+            <textarea id="left_text"></textarea>
+        </div>
+
+        <div id="center" class="mini_wrapper">
+            <span>Center</span>
+            <textarea id="center_text"></textarea>
+        </div>
+
+        <div id="right" class="mini_wrapper">
+            <span>Right</span>
+            <textarea id="right_text"></textarea>
+        </div>
+
+    </div>
+
+<div id="button_wrapper">
+    <button type="button" id="save">Save</button></div>
+
+    <script type="text/javascript" src="db.js"></script>
+
+
+</body>
+
+</html>
